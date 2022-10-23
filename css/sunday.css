@@ -15,6 +15,8 @@
     transition: all 0.5s ease-out;
 }
 
+
+
 .navbar-light .navbar-nav .nav-link.active {
     background-color: #f2f2f2;
     color: #0d0d0d;
@@ -32,6 +34,12 @@
 @media screen and (max-width: 991px ) {
     .navbar-nav .nav-link {
         padding-left: 20px;
+    }
+    #mainNav {
+        background-color: aquamarine;
+    }
+    #navbarNav .container-fluid {
+    background: #2ABABF;
     }
 }
 
@@ -54,7 +62,7 @@ img {
 }
 
 hr {
-    background: #BF8821;
+    background: #2ABABF;
     height: 3px;
 }
 
@@ -65,7 +73,7 @@ h1, h2, h3, h4 {
 .lead-container {
     padding: 180px 10% 80px;
     height: 551px;
-    background-color: #bf8821;
+    background-color: #2ABABF;
 }
 
 .photo-bg {
@@ -74,3 +82,15 @@ h1, h2, h3, h4 {
     background-position: top center;
     height: 551px;
 }
+
+.btn {
+    background-color: #BF8821;
+    color: #EEE;
+    border: 1px solid black;
+}
+
+.btn:hover{
+    -webkit-transform: scale(1.1);
+    background: #2ABABF;
+}
+

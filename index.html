@@ -21,22 +21,22 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbarNav">
         <div class="container-fluid">
           <a class="navbar-brand px-4" href="#">Logan Simpson</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse">
+          <div class="collapse navbar-collapse" id="mainNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">My Projects</a>
+                <a class="nav-link" href="#myProjects">My Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">My Skills</a>
+                <a class="nav-link" href="#mySkills">My Skills</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link">Contact Me</a>
+                <a class="nav-link" href="#contact">Contact Me</a>
               </li>
             </ul>
           </div>
@@ -55,24 +55,24 @@
       
 
       <div class="container pt-5">
-      <h7>My Experience</h7>
+      <h7 id="myProjects">My Experience</h7>
       <h2><b>Latest Works</b></h2><hr>
       <div class="row py-4">
-        <div class="col-sm-4"><div class="project"><img src="../images/projectPlaceholder.jpg"><div class="project-body"><br>
+        <div class="col-sm-4"><div class="project"><a href="projects/Space/index.html"><img class="img-fluid" src="../images/astronaut.png"></a><div class="project-body"><br>
           <ul class="list-unstyled"><li>HTML</li>
             <li>CSS</li>
             <li>Bootstrap</li>
           </ul></div></div>
         </div>
 
-        <div class="col-sm-4"><div class="project"><img src="../images/projectPlaceholder.jpg"><div class="project-body"><br>
+        <div class="col-sm-4"><div class="project"><img class="img-fluid" src="../images/projectPlaceholder.jpg"><div class="project-body"><br>
           <ul class="list-unstyled"><li>HTML</li>
             <li>CSS</li>
             <li>Bootstrap</li>
           </ul></div></div></div>
         
 
-        <div class="col-sm-4"><div class="project"><img src="../images/projectPlaceholder.jpg"><div class="project-body"><br>
+        <div class="col-sm-4"><div class="project"><img class="img-fluid" src="../images/projectPlaceholder.jpg"><div class="project-body"><br>
           <ul class="list-unstyled"><li>HTML</li>
             <li>CSS</li>
             <li>Bootstrap</li>
@@ -82,18 +82,18 @@
 
 
         
-        <div class="row py-5">
+        <div class="row py-5" id="mySkills">
           <div class="col-sm-4"><img src="../images/loganSkills.jpg" style="width:100%"></div>
           <div class="col-sm-8"><h4>Technical Skills Summary:</h4>
             <ul class="list-unstyled">
-            <li><strong>Programming/Development:</strong>  HTML5, CSS, JavaScript, , SQL, C#</li> 
+            <li><strong>Programming/Development:</strong>  HTML5, CSS, JavaScript, SQL, C#</li> 
             <li><strong>Libraries/Frameworks:</strong> jQuery, Bootstrap, ASP.NET</li> 
-            <li><strong>IDEs:</strong> Visual Studio, VS Code, Brackets</li> 
-            <li><strong>Database:</strong> SQL, MS SQL, MySQL, SQLite</li> 
+            <li><strong>IDEs:</strong> VS Code, Visual Studio</li> 
+            <li><strong>Database:</strong> SQL, MySQL</li> 
             <li><strong>Source Control:</strong> Git & GitHub</li>
-            <li><strong>Creative:</strong> Adobe Illustrator, Adobe Photoshop, Adobe InDesign, Sketch</li> 
+            <li><strong>Creative:</strong> Adobe Illustrator, Adobe Photoshop, Adobe InDesign,</li> 
             <li><strong>Methodologies:</strong>  Agile/Scrum, Mobile First, Developer Tools</li>
-            <li><strong>Development Management:</strong> Azure DevOps, Notion</li>
+            <li><strong>Development Management:</strong> Trello, Azure DevOps,</li>
             <li><strong>Software:</strong> FileZilla</li>
             <li><strong>Hosting:</strong>  GoDaddy/cPanel</li>
             </ul>
@@ -103,14 +103,37 @@
         
 
 
-          <div class="row pt-5">
+          <div class="row py-5" id="contact">
+            <div class="col-sm-2"></div>
             <div class="col-sm-8">
-            <div class="col-sm-4">
-              <h4>Contact</h4>
+              
+              <h4 class="pb-4">Contact</h4>
+              <form method="post" >
+                <div class="mb-3">
+                  <label for="YourName" class="form-label">Your Name</label>
+                  <input type="text" class="form-control" id="YourName">
+                </div>
+                
+                <div class="mb-3">
+                  <label for="inputEmail" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">I'll never share your email with anyone else.</div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="yourMessage" class="form-label">Your Message</label>
+                  <textarea class="form-control" name="message" rows="5" id="yourMessage">(This form is not functional at the moment).</textarea>
+                  
+                </div>
+          
+                <button type="submit" class="btn"><strong>Submit</strong></button>
+              </form>
+            
             </div>
-            </div>
+            <div class="col-sm-2"></div>
           </div>
         </div>
+
 
 
         
